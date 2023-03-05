@@ -3,7 +3,7 @@ version: "2.1"
 services:
   webtop:
     build: .
-    container_name: webtop-pbtech
+    container_name: webtop-vpn
     environment:
       - PUID=1000
       - PGID=1000
