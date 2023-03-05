@@ -1,0 +1,17 @@
+---
+version: "2.1"
+services:
+  webtop:
+    build: .
+    container_name: webtop-pbtech
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Pacific/Auckland
+      - TITLE=pbtech
+    volumes:
+      - ./data:/config
+      - /var/run/docker.sock:/var/run/docker.sock #optional
+    ports:
+      - 3000:3000
+    restart: unless-stopped
