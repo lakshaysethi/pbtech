@@ -14,4 +14,4 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock #optional
     ports:
       - 3000:3000
-    restart: unless-stopped
+    restart: always
