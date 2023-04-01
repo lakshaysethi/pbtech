@@ -9,6 +9,8 @@ RUN sudo pacman -Sy && \
     rm -rf yay-bin
 
 RUN pacman -S globalprotect-openconnect firefox --noconfirm
+RUN yay -S  --noconfirm
+RUN yay -S google-chrome --noconfirm
 COPY root.crt /mycerts/root.crt
-RUN trust anchor --store /mycerts/root.crt
+# RUN trust anchor --store /mycerts/root.crt
 
