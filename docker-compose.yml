@@ -9,9 +9,9 @@ services:
       - PGID=1000
       - TZ=Pacific/Auckland
       - TITLE=job
-    volumes:
-      - ./data:/config
-      - /var/run/docker.sock:/var/run/docker.sock #optional
+#     volumes:
+#       - ./data:/config
+#       - /var/run/docker.sock:/var/run/docker.sock #optional
     ports:
       - 3000:3000
     restart: always
