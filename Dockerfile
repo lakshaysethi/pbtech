@@ -11,7 +11,6 @@ RUN sudo pacman -Sy && \
 RUN pacman -S firefox --noconfirm
 
 RUN sudo -u abc yay -S \
-    google-chrome \
     globalprotect-openconnect-git\
     visual-studio-code-bin \
     nano \
