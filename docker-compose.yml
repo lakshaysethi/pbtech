@@ -14,3 +14,5 @@ services:
       - 3000:3000
     # network_mode: host
     restart: always
+    cap_add:
+      - CAP_NET_ADMIN
