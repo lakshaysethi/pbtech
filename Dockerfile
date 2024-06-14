@@ -10,7 +10,12 @@ RUN sudo pacman -Sy && \
 
 RUN pacman -S firefox --noconfirm
 
-RUN sudo -u abc yay -S google-chrome globalprotect-openconnect-git --noconfirm
+RUN sudo -u abc yay -S \
+    google-chrome \
+    globalprotect-openconnect-git\
+    visual-studio-code-bin \
+    nano \
+    --noconfirm
 # COPY root.crt /mycerts/root.crt
 # RUN trust anchor --store /mycerts/root.crt
 
