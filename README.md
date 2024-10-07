@@ -1,4 +1,4 @@
 # webtop
 ## arch:kde
 
-## `google chrome` and `yay` is pre installed
+## `firefox` , `vs code` and `yay` is pre installed
